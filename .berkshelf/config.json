@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/oclc-tw-test",
+    "validation_client_name": "oclc-tw-test-validator",
+    "validation_key_path": ".chef/oclc-tw-test-validator.pem",
+    "client_key": ".chef/oclc-tw-test.pem",
+    "node_name": "oclc-tw-test"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
